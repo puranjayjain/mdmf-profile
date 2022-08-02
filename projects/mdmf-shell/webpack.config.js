@@ -13,7 +13,8 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       remotes: {
-        profile: 'profile@http://localhost:4201/remoteEntry.js}',
+        // profile: 'profile@http://localhost:4201/remoteEntry.js}',
+        profile: 'profile@https://raw.githubusercontent.com/puranjayjain/mdmf-profile/main/dist/mdmf-profile/remoteEntry.js}',
       },
       shared: {
         '@angular/core': { eager: true, singleton: true },
